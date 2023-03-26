@@ -1,0 +1,54 @@
+﻿
+@using PlatinumLife.Models
+@model IEnumerable<Invoice>
+@{
+
+    ViewData["Title"] = "List of Invoices";
+}
+
+<div style="position: fixed; right: 25px; top:25px" class="text-class"  >
+    <a asp-controller="Invoice" asp-action="Create" class="btn-success">
+    <i class="bi-plus-circle"></i> Add New </a>
+</div>
+
+<div class="row">
+
+    <div class="col-md-8 offset-md-2">
+        <table>
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Submitter)</th>
+                    <th>@Html.DisplayNameFor(model => model.Department)</th>
+                    <th>@Html.DisplayNameFor(model => model.InvoiceDate)</th>
+                    <th>@Html.DisplayNameFor(model => model.PaymentDate)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.Submitter)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.Department)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.InvoiceDate)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.PaymentDate)
+                        </td>
+                        <td class="align-middle">
+                            <a class"btn-outline-primary" asp-for="Invoice" asp-action="Edit" asp-route-id="@item.InvoiceId"><i class="bi bi-pencil-square"></i>Edit </a>
+                            <a class"btn-outline-info" asp-for="Invoice" asp-action="Details" asp-route-id="@item.InvoiceId"><i class="bi bi-eye"></i>Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
