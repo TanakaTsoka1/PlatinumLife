@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1705.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatinumLife", "Platinum Life\PlatinumLife.csproj", "{77237203-14EF-453D-B8B9-379FB4157A1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatinumLife", "PlatinumLife.csproj", "{8325DF2A-890A-496A-B169-9FDF577AD44C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{77237203-14EF-453D-B8B9-379FB4157A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77237203-14EF-453D-B8B9-379FB4157A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77237203-14EF-453D-B8B9-379FB4157A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77237203-14EF-453D-B8B9-379FB4157A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8325DF2A-890A-496A-B169-9FDF577AD44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8325DF2A-890A-496A-B169-9FDF577AD44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8325DF2A-890A-496A-B169-9FDF577AD44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8325DF2A-890A-496A-B169-9FDF577AD44C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5A62C500-250D-4AED-B4D4-80954A9D4154}
+		SolutionGuid = {C04084BD-F7EA-4FAB-82B5-AC35EC844B90}
 	EndGlobalSection
 EndGlobal

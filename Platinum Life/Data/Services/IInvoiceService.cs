@@ -10,7 +10,7 @@ namespace Platinum_Life.Data.Services
 
 		Task CreateInvoiceAsync(Invoice invoice);
 
-		Invoice UpdateInvoice(int invoiceId, Invoice newInvoice);
+		Task <Invoice> UpdateInvoiceAsync(int invoiceId, Invoice newInvoice);
 
 		void DeleteInvoice(int invoiceId);
 	}

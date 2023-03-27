@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{8325DF2A-890A-496A-B169-9FDF577AD44C}|https">
+  <MonoDevelop.Ide.ItemProperties.PlatinumLife PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PlatinumLife" expanded="True">
+            <Node name="NuGet.Config files" expanded="True" selected="True" />
+            <Node name="PlatinumLife" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

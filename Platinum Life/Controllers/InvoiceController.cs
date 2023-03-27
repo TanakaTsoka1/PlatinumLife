@@ -45,12 +45,37 @@ namespace Platinum_Life.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Edit(int id)
+        {
+            var invoice = await _service.GetInvoiceAsync(id);
+            if (invoice == null)
+            {
+                return View("Not Found ");
+            }
+
+            return View(invoice);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, Invoice invoice)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(invoice);
+            }
+
+            await _service.UpdateInvoiceAsync(id, invoice);
+
+            return RedirectToAction(nameof(Index));
+        }
+
         public async Task<IActionResult> Details(int id)
         {
             var invoice = await _service.GetInvoiceAsync(id);
             if (invoice == null)
             {
-                return View(Empty);
+                return View("Not Found");
             }
 
             return View(invoice);

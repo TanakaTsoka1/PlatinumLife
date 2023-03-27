@@ -27,6 +27,7 @@ namespace Platinum_Life.Data.Services
         {
 
             var result = await _context.Invoices.FirstOrDefaultAsync(x => x.InvoiceId == invoiceId);
+
             return result;
         }
 
@@ -35,9 +36,14 @@ namespace Platinum_Life.Data.Services
             return await _context.Invoices.ToListAsync();         
         }
 
-        public Invoice UpdateInvoice(int invoiceId, Invoice newInvoice)
-        {
-            throw new NotImplementedException();
+        public async Task<Invoice> UpdateInvoiceAsync(int invoiceId, Invoice newInvoice)
+        { 
+            var invoice = _context.Update(newInvoice);
+
+            var result = await _context.SaveChangesAsync();
+
+            return newInvoice;
+           
         }
     }
 }

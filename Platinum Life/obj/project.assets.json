@@ -2664,11 +2664,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Tanaka/Projects/Platinum Life/Platinum Life/PlatinumLife.csproj",
+      "projectUniqueName": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/PlatinumLife.csproj",
       "projectName": "PlatinumLife",
-      "projectPath": "/Users/Tanaka/Projects/Platinum Life/Platinum Life/PlatinumLife.csproj",
+      "projectPath": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/PlatinumLife.csproj",
       "packagesPath": "/Users/Tanaka/.nuget/packages/",
-      "outputPath": "/Users/Tanaka/Projects/Platinum Life/Platinum Life/obj/",
+      "outputPath": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Tanaka/.nuget/NuGet/NuGet.Config"
