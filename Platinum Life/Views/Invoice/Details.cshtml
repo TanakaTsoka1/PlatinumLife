@@ -2,70 +2,90 @@
 @model Invoice
 
 @{
-    ViewData["Title"] = "Add a new Invoice";
+    ViewData["Title"] = "Details Invoice";
 }
 
 <div class="row-text">
     <div class="">
         <p>
-            <h1>Invoice @Model.InvoiceId.</h1>
+            <h2>Invoice @Model.InvoiceId.</h2>
         </p>
-        <div class="row">
-            <div>
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+
+            <div class="form-content">
                 <div class="form-group">
                     <label asp-for="Submitter"> </label>
-                    <input asp-for="Submitter" class="form-control" readonly />
+                    <input asp-for="Submitter" class="input" disabled />
                     <span asp-validation-for="Submitter" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Department"> </label>
-                    <input asp-for="Department" class="form-control" readonly />
-                    <span asp-validation-for="Department" class="text-danger"></span>
+                    <select asp-for="Department" asp-items="Html.GetEnumSelectList<Platinum_Life.Data.Department>()" disabled class="select-box">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
                 </div>
+            </div>
+            <div class="form-content">
                 <div class="form-group">
                     <label asp-for="InvoiceDate"> </label>
-                    <input asp-for="InvoiceDate" class="form-control" readonly />
+                    <input asp-for="InvoiceDate" class="form-control" disabled />
                     <span asp-validation-for="InvoiceDate" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="PaymentDate"> </label>
-                    <input asp-for="PaymentDate" class="form-control" readonly />
+                    <input asp-for="PaymentDate" class="form-control" disabled />
                     <span asp-validation-for="PaymentDate" class="text-danger"></span>
                 </div>
+            </div>
+            <div class="form-content">
                 <div class="form-group">
                     <label asp-for="PaymentRecipientName"> </label>
-                    <input asp-for="PaymentRecipientName" class="form-control" readonly />
+                    <input asp-for="PaymentRecipientName" class="input" disabled />
                     <span asp-validation-for="PaymentRecipientName" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="PaymentRecipientBank"> </label>
-                    <input asp-for="PaymentRecipientBank" class="form-control" readonly />
+                    <input asp-for="PaymentRecipientBank" class="input" disabled />
                     <span asp-validation-for="PaymentRecipientBank" class="text-danger"></span>
                 </div>
+            </div>
+            <div class="form-content">
                 <div class="form-group">
                     <label asp-for="PaymentRecipientAccount"> </label>
-                    <input asp-for="PaymentRecipientAccount" class="form-control" />
+                    <input asp-for="PaymentRecipientAccount" class="input" disabled />
                     <span asp-validation-for="PaymentRecipientAccount" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="PaymentDescription"> </label>
-                    <input asp-for="PaymentDescription" class="form-control" readonly />
+                    <input asp-for="PaymentDescription" class="input" disabled />
                     <span asp-validation-for="PaymentDescription" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="SigningManager"> </label>
-                    <input asp-for="SigningManager" class="form-control" readonly />
-                    <span asp-validation-for="SigningManager" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Create">
-                    <a class="" asp-action="Edit" asp-route-id="@Model.InvoiceId "></a>
-                    <a class="" asp-action="Index">Show All</a>
-                    <a class"btn-outline-primary" asp-for="Invoice" asp-action="Sign" asp-route-id="@Model.InvoiceId"><i class="bi bi-pencil-square"></i>Sign</a>
+            </div>
+            <div class="form-group">
+                <label asp-for="SigningManager"> </label>
+                <input asp-for="SigningManager" class="input" disabled />
+                <span asp-validation-for="SigningManager" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a class="button-back" asp-action="Index"><i class="bi bi-arrow-return-left"></i>Back</a>
+                <a class="button-sign" asp-for="Invoice" asp-action="Sign" asp-route-id="@Model.InvoiceId" onclick="openPopUp()"><i class="bi bi-pencil-square"></i>Sign</a>
+                <div class="popup" id="popup">
+                    <h2>Invoice Signed Successfully</h2>
+                    <p>Contact us if pdf does not download automatically.</p>
+                    <button type="button" onclick="closePopUp()">OK</button>
                 </div>
             </div>
         </div>
+        <script>let popup = document.getElementById("popup")
+
+            function openPopUp() {
+                popup.classList.add("open-popup");
+            }
+
+            function closePopUp() {
+                popup.classList.remove("open-popup");
+            }</script>
     </div>
 </div>

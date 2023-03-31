@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/Views/Fileupload/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmlsZXVwbG9hZC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/Views/Invoice/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW52b2ljZS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

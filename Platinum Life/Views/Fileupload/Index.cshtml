@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="post" enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Index">
+    <div class="form-content">
+        <div class="form-group">
+            <div class="col-md-10">
+                <h2>Upload one or more files using this form:</h2>
+                <input type="file" name="files" multiple />
+            </div>
+        </div>
+        <div class="col-md-10">
+            <input type="submit" value="Upload" class="submit"/>
+            <a class="button-back" asp-controller="Invoice" asp-action="Index" style="bottom:100px"><i class="bi bi-arrow-return-left"></i>Back</a>
+        </div>
+        </div>
+</form>

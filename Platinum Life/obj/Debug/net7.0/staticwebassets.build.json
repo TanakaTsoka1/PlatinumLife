@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8gZw+fQ7NiZaOPRuMmJXjoJFv6Sxgg4h0TqG+cbSv9M=",
+  "Hash": "qsEznLbZC5Qf2nKvUgWVtg7aVs9dGzUCCp5q6A7jUyE=",
   "Source": "PlatinumLife",
   "BasePath": "_content/PlatinumLife",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/wwwroot/css/form.css",
+      "SourceId": "PlatinumLife",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/wwwroot/",
+      "BasePath": "_content/PlatinumLife",
+      "RelativePath": "css/form.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/form.css"
     },
     {
       "Identity": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/wwwroot/css/site.css",

@@ -81,18 +81,18 @@ namespace Platinum_Life.Controllers
             return View(invoice);
         }
 
+
         public async Task<ActionResult> Sign(int id)
         {
             var document = new PdfDocument();
 
 
-            string imgeurl = @".signature.webp";
+            string imgeurl = "signature.webp";
             ;
 
             Invoice header = await _service.GetInvoiceAsync(id);
             string htmlcontent = "<div style='width:100%; text-align:center'>";
             htmlcontent += "<h2>Platinum Life</h2>";
-            htmlcontent += "<img style='width:80px;height:80%' src='" + imgeurl + "'   />";
 
             if (header != null)
             {

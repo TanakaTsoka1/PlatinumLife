@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/wwwroot/css/form.css",
+      "PackagePath": "staticwebassets/css/form.css"
+    },
+    {
       "Id": "/Users/Tanaka/Documents/Work/PlatinumLife/Platinum Life/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

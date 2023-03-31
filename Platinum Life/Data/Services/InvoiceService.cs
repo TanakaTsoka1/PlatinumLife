@@ -25,7 +25,6 @@ namespace Platinum_Life.Data.Services
 
         public async Task<Invoice> GetInvoiceAsync(int invoiceId)
         {
-
             var result = await _context.Invoices.FirstOrDefaultAsync(x => x.InvoiceId == invoiceId);
 
             return result;
@@ -39,7 +38,7 @@ namespace Platinum_Life.Data.Services
         public async Task<Invoice> UpdateInvoiceAsync(int invoiceId, Invoice newInvoice)
         { 
             var invoice = _context.Update(newInvoice);
-
+            
             var result = await _context.SaveChangesAsync();
 
             return newInvoice;

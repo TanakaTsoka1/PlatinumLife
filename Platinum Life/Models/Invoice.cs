@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Web;
 using System.ComponentModel.DataAnnotations;
 using Platinum_Life.Data;
+
 
 namespace PlatinumLife.Models
 {
@@ -45,8 +47,5 @@ namespace PlatinumLife.Models
         [Display(Name = "Approved By")]
         [Required(ErrorMessage = "Signing manager is required.")]
         public string SigningManager { get; set; }
-
-        [Display(Name = "Signed")]
-        public string Signed { get; set; }
     }
 }
